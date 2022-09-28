@@ -1,0 +1,27 @@
+license: MIT
+metadata:
+  created_by: ''
+  created_date: 2022-06-09
+  modified_by: ''
+  modified_date: 2022-06-09
+name: some name
+references: []
+statement: An organization receives 1000 unique phishing emails in a single day
+surfaces:
+- category: service
+  events:
+  - description: A user receives a potential phishing email
+    metadata:
+    - From
+    - To
+    - Subject
+    - Body
+    - Attachments
+    name: Receives phishing email
+    observations:
+      name: ''
+      sensors: []
+    techniques:
+    - T1004
+  name: mail-service
+version: 0.0.1

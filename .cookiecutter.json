@@ -1,0 +1,12 @@
+{
+  "_template": "gh:cjolowicz/cookiecutter-hypermodern-python",
+  "author": "Josh Rickard",
+  "development_status": "Development Status :: 1 - Planning",
+  "email": "rickardja@live.com",
+  "friendly_name": "Threat Driven Security",
+  "github_user": "MSAdministrator",
+  "license": "MIT",
+  "package_name": "threat_driven_security",
+  "project_name": "threat-driven-security",
+  "version": "0.0.0"
+}

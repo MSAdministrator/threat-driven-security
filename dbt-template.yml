@@ -1,0 +1,71 @@
+# Threat Driven Security Architecture 
+references:
+  - https://www.cisa.gov/sites/default/files/publications/eVRF_Guidebook_RFC_508C.pdf
+version: 0.0.1
+license: MIT
+metadata:
+  created-by: Josh Rickard
+  modified-by: Josh Rickard
+  created-date: 10MAY2022
+  last-modified: 10MAY2022
+name: Example of a Security Basis Threat project
+statement: An organization receives 1000 unique phishing emails in a single day
+surface:
+  mail-service:
+    category: service
+    event:
+      - name: Receive incoming email
+        metadata:
+          - sender
+          - receipient
+          - subject
+          - attachments
+        description: Additional notes here
+        techniques:
+          - T1004
+          - T1004.001
+          - etc.
+        observations:
+          - name: Email Application
+            sensors:
+              - Mail Flow Logs
+              - Mailbox Audit Logs
+              - etc.
+          - name: Antivirus
+            sensors:
+              - Mailware protection logs
+          - name: Cloud Access Service
+            sensors:
+              - Identity protection logs
+              - Cloud Access Security Broker logs
+          - name: AWS
+            sensors:
+              - CloudTrail logs
+              - etc.
+  anti-spam-appliance:
+  edr:
+    category: software
+    event:
+      - name: Received potential malicious email
+        metadata:
+          - sender
+          - receipient
+          - subject
+          - attachments
+        description: Depending on product the metadata may be different. These are examples only.
+        techniques:
+          - T1004
+          - T1004.001
+          - etc.
+        observations:
+          - name: Reported malicious message
+            sensors:
+              - Mailbox Audit Logs
+              - EDR Querys
+              - Mailbox search
+              - etc.
+          - name: Antivirus
+            sensors:
+              - Mailware protection logs
+  mobile:
+    
