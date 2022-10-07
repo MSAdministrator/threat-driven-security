@@ -39,6 +39,18 @@ Threat Driven Security
 Goals
 --------
 
+Nuclear facilities and other critical infrastructure utilize a concept called [Design Basis Threat](https://nstc.sandia.gov/training/department-of-energy/programmatic-training/copy5_of_design-basis-threat-v1.1#:~:text=A%20Design%20Basis%20Threat%20(DBT,State's%20current%20evaluation%20of%20threats.) (DBT) to design, build and validate defensive measures are in place.
+The information security industry needs to adopt a similar approach.
+
+I would like to introduce a project called `Threat Driven Security` (TDS). TDS aims to help organizations build and asses their infrastructure (and services) using a standard set of definition files. 
+
+Each of these definitions focuses on a common security threat. Each defined security threat has one or more [surfaces]() that provide an opportunity to detect malicious behavior. 
+Along with each defined surface, one or more events can be defined which outlines metadata (e.g. log fields, etc.), description, associated techniques and one or more categorical ways of observing activity.
+
+Again, each of these definitions are vendor agnostic ways to defining specifics around threats like where to observe, what to observe, how to observe and more.
+
+
+When building secure infrastructure and services we must understand how security operations can help to protect our environments. 
 Determine an organizations security visibility from simple description of log sources in an environment.
 
 
