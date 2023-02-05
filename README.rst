@@ -39,7 +39,7 @@ Threat Driven Security
 Goals
 --------
 
-Nuclear facilities and other critical infrastructure utilize a concept called [Design Basis Threat](https://nstc.sandia.gov/training/department-of-energy/programmatic-training/copy5_of_design-basis-threat-v1.1) (DBT) to design, build and validate defensive measures are in place.
+Nuclear facilities and other critical infrastructure utilize a concept called `Design Basis Threat <h ttps://nstc.sandia.gov/training/department-of-energy/programmatic-training/copy5_of_design-basis-threat-v1.1>`_. (DBT) to design, build and validate defensive measures are in place.
 The information security industry needs to adopt a similar approach.
 
 I would like to introduce a project called `Threat Driven Security` (TDS). TDS aims to help organizations build and asses their infrastructure (and services) using a standard set of definition files. 
